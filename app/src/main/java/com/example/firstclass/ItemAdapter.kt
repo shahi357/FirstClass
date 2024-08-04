@@ -36,10 +36,10 @@ class ItemAdapter(val list:List<Cats>): RecyclerView.Adapter<ItemAdapter.ItemVie
         //holder.binding.image.setImageResource(list.get(position).drawable)
         val url =  "https://cataas.com/cat"
         Picasso.get().load(url).into(holder.binding.image)
-//        holder.binding.root.setOnClickListener {
-////            Toast.makeText(holder.binding.root.context,list.get(position).title,Toast.LENGTH_SHORT).show()
+        holder.binding.root.setOnClickListener {
+//            Toast.makeText(holder.binding.root.context,list.get(position).title,Toast.LENGTH_SHORT).show()
 //            mClick?.Click(list.get(position).title)
-//        }
+        }
     }
 
 
